@@ -55,3 +55,16 @@ def number_to_short_month_name(number)
     return "Oct"
   end
 end
+
+def volume_of_cube(number)
+  return number * number * number
+end
+
+def volume_of_sphere(number)
+  num_cube = volume_of_cube(number)
+  return ((4.0/3.0)*(3.1415*num_cube)).round(2)
+end
+
+def fah_to_cel(number)
+  return ((number - 32)*(5.0/9.0)).round(1)
+end
